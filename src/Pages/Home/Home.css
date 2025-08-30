@@ -1,0 +1,15 @@
+.home-page{
+    width: 100%;
+    padding: 0 16px;
+}
+
+@media (min-width: 576px) {
+    .home-page{
+        padding: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .home-page{
+        overflow-y: scroll;
+    }
+}

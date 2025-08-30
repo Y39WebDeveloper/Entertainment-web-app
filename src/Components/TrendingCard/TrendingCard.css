@@ -1,0 +1,131 @@
+.trending-card {
+    width: 240px;
+    height: 140px;
+    min-width: 240px;
+    min-height: 140px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+}
+.trending-card .bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.trending-card .bg-img img{
+    width: 100%;
+    height: 100%;
+}
+.trending-card .play{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    width: 117px;
+    padding: 9px;
+    border-radius: 50px;
+    gap: 16px;
+    background-color: #ffffff40;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.trending-card:hover .play{
+    display: flex;
+}
+.trending-card .play img{
+    width: 30px;
+    height: 30px;
+}
+.trending-card:hover {
+    background-color: #00000080;
+}
+
+.trending-card .bookmark {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #10141E80;
+    border-radius: 50%;
+    align-self: flex-end;
+    transform: translate(-8px, 8px);
+    transition: .3s;
+}
+.trending-card .bookmark img {
+    width: 12px;
+    height: 14px;
+}
+.trending-card .bookmark .mask{
+    mask: url('/assets/icon-bookmark-empty.svg') center no-repeat;
+    background-color: #000;
+    mask-size: contain;
+    width: 12px;
+    height: 14px;
+    display: none;
+}
+.trending-card .bookmark:hover{
+    background-color: #fff;
+}
+.trending-card .bookmark:hover img{
+    display: none;
+}
+.trending-card .bookmark:hover .mask{
+    display: block;
+}
+
+
+.trending-card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 16px;
+    background: linear-gradient(#00000000, #000000bf);
+    width: 100%;
+
+}
+
+.trending-card .info .more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.trending-card .info .more span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #ffffffbf;
+}
+
+.trending-card .info .more .separate {
+    width: 3px;
+    aspect-ratio: 1;
+    background-color: #ffffff80;
+}
+
+.trending-card .info .title {
+    color: #fff;
+}
+
+@media (min-width: 576px) {
+    .trending-card {
+        width: 470px;
+        height: 230px;
+        min-width: 470px;
+        min-height: 230px;
+    }
+}

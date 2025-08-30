@@ -1,0 +1,24 @@
+.trending-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.trending-section .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: scroll;
+    max-width: calc(100% + 16px);
+}
+@media (min-width: 576px) {
+    .trending-section{
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    .trending-section .card-container{
+        width: 100%;
+    }
+}

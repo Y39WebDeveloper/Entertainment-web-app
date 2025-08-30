@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'react'
-import data from './data.json'
-import './App.css'
+import "./App.css";
+import { Home } from "./Pages";
+import { Navbar } from "./Components";
 
 function App() {
-
-  if(!data) return <div>Loading...</div>
-
   return (
-    <>
-      <div>{data.map((d,i)=><h1 key={i}>{d.title}</h1>)}</div>
-    </>
-  )
+    <div className="app">
+      <Navbar />
+      <Home />
+    </div>
+  );
 }
 
-export default App
+export default App;

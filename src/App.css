@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&display=swap');
+:root{
+    --white: #fff;
+    --black: #000;
+    --blue-950: #10141E;
+    --blue-900: #161D2F;
+    --blue-500: #5A698F;
+    --red: #FC4747;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+.txt-1{
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+}
+.txt-2-m{
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+.txt-2-l{
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+.txt-3{
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    font-weight: 500;
+}
+.txt-4{
+    font-size: 15px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+.txt-5{
+    font-size: 13px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+
+@media (max-width: 575px){
+    .txt-1{
+        font-size: 20px;
+        letter-spacing: -0.3px;
+    }
+    .txt-2-l,.txt-2-m{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .txt-3{
+        font-size: 15px;
+    }
+    .txt-4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .txt-5{
+        font-size: 12px;
+    }
+    .txt-6{
+        font-size: 11px;
+        line-height: 125%;
+        letter-spacing: 0px;
+    }
+}
+
+body{
+    background-color: var(--blue-950);
+    color: var(--white);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .app{
+        padding: 23px 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .app{
+        flex-direction: row;
+        padding: 32px;
+        height: 100vh;
+        width: 100vw;
+        align-items: stretch;
+        justify-content: space-between;
+        /* overflow: hidden; */
+        overflow: hidden;
+    }
+}

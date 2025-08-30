@@ -1,0 +1,6 @@
+export { default as Navbar } from './Navbar/Navbar'
+export { default as SearchInput } from './SearchInput/SearchInput'
+export { default as TrendingSection } from './TrendingSection/TrendingSection'
+export { default as TrendingCard } from './TrendingCard/TrendingCard'
+export { default as Card } from './Card/Card'
+export { default as RecommendedSection } from './RecommendedSection/RecommendedSection'
