@@ -83,7 +83,10 @@
 .trending-card .bookmark:hover .mask{
     display: block;
 }
-
+.trending-card .bookmark.active .mask{
+    mask: url('/assets/icon-bookmark-full.svg') center no-repeat;
+    background-color: var(#000);
+}
 
 .trending-card .info {
     display: flex;

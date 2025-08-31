@@ -54,6 +54,10 @@
     height: 14px;
     display: none;
 }
+.card .card-img .bookmark.active .mask{
+    mask: url('/assets/icon-bookmark-full.svg') center no-repeat;
+    background-color: var(#000);
+}
 .card .card-img .bookmark:hover{
     background-color: #fff;
 }
