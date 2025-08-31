@@ -5,24 +5,27 @@ import { DataContext } from "../../Contexts/DataContext";
 
 function Home() {
   const { screen, search } = useContext(DataContext);
-  const [title, setTitle] = useState("Recommended for you");
 
-  useEffect(() => {
-    switch (screen) {
-      case "Movie":
-        setTitle("Movies");
-      case "TV":
-        setTitle("TV Series");
-      case "Bookmark":
-        setTitle("Bookmarked Movies");
-      default:
-        setTitle("Recommended for you");
-        break;
-    }
-  }, [screen]);
+  const title =
+    screen === "Movie"
+      ? "Movies"
+      : screen === "TV"
+      ? "TV Series"
+      : screen === "Bookmark"
+      ? "Bookmarked Movies"
+      : "Recommended for you";
+  const placeholder =
+    screen === "Movie"
+      ? "movies"
+      : screen === "TV"
+      ? "TV series"
+      : screen === "Bookmark"
+      ? "bookmarked shows"
+      : "movies or TV series";
+
   return (
     <div className="home-page">
-      <SearchInput placeholder={"Search for movies or TV series"} />
+      <SearchInput placeholder={`Search for ${placeholder}`} />
       {screen === "Home" && search === "" && <TrendingSection />}
       <CardsSection title={title} />
     </div>
