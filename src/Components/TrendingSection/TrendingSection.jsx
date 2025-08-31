@@ -31,10 +31,7 @@ function TrendingSection() {
             year={t.year}
             isBookmarked={t.isBookmarked}
             thumbnail={
-              "Entertainment-web-app" +
-              (isMobile
-                ? t.thumbnail.trending.small
-                : t.thumbnail.trending.large)
+              isMobile ? t.thumbnail.trending.small : t.thumbnail.trending.large
             }
             isMobile={isMobile}
           />

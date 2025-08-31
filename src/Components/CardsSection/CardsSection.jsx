@@ -54,7 +54,8 @@ function CardsSection({ title }) {
             year={t.year}
             isBookmarked={t.isBookmarked}
             thumbnail={
-              isMobile ? t.thumbnail.regular.small : t.thumbnail.regular.large
+              "/Entertainment-web-app" +
+              (isMobile ? t.thumbnail.regular.small : t.thumbnail.regular.large)
             }
             isMobile={isMobile}
           />
